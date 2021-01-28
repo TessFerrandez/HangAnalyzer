@@ -1,0 +1,172 @@
+﻿
+.  0  Id: 1f04.6e78 Suspend: 0 Teb: 00000086`9ff0a000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`7e0837d3     : ffffffff`06000018 003901b1`8f8331f0 000001b1`8f822b28 003901b1`8f8331f0 : ntdll!NtReadFile+0x14
+01 00007ffb`924e29b8     : 000001b1`9152e198 000001b1`9152e1a8 00000000`00000000 00000086`a017e430 : KERNELBASE!ReadFile+0x73
+02 00007ffc`4fc48d46     : 00000000`00000008 000001b1`9152e1a8 00000000`00001000 00000086`a017e430 : 0x00007ffb`924e29b8
+03 00007ffc`4fc48c93     : 00000000`00000008 000001b1`9152e198 00000000`00000000 00000000`00001000 : System_Console!System.ConsolePal+WindowsConsoleStream.ReadFileNative(IntPtr, Byte[], Int32, Int32, Boolean, Int32 ByRef, Boolean)$##60000FE+0x76
+04 00007ffb`f0c4fc44     : 000001b1`9152df30 000001b1`9152e198 00000000`00000000 00000000`00001000 : System_Console!System.ConsolePal+WindowsConsoleStream.Read(Byte[], Int32, Int32)$##60000FB+0x63
+05 00007ffb`f0c4fb96     : 000001b1`9152e110 000001b1`8f822b20 00000000`00000000 00000000`00000001 : System_Private_CoreLib!System.IO.StreamReader.ReadBuffer()$##60045F0+0x44
+06 00007ffc`4fc4d143     : 000001b1`9152e110 000001b1`8f822b20 000001b1`8f822b20 00000000`00000001 : System_Private_CoreLib!System.IO.StreamReader.ReadLine()$##60045F2+0x146
+07 00007ffc`4fc4530d     : 000001b1`91537210 00000000`00000000 000001b1`8f822b20 00000000`00000006 : System_Console!System.IO.SyncTextReader.ReadLine()$##6000193+0x43
+08 00007ffb`924e0fef     : 00000000`00000000 00000086`a017e528 000001b1`8f822b20 000001b1`9152d9b8 : System_Console!System.Console.ReadLine()$##6000073+0x1d
+09 00007ffb`f2006ba3     : 000001b1`91529e00 000001b1`8f814590 00007ffb`92581b50 00000086`a017ea30 : 0x00007ffb`924e0fef
+0a 00007ffb`f1f9cb82     : 00000086`a017e8c8 00000086`a017e8c8 00000000`00000000 00000086`a017e6c0 : coreclr!CallDescrWorkerInternal+0x83 [F:\workspace\_work\1\s\src\vm\amd64\CallDescrWorkerAMD64.asm @ 101] 
+0b (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : coreclr!CallDescrWorkerWithHandler+0x57 [f:\workspace\_work\1\s\src\vm\callhelpers.cpp @ 70] 
+0c 00007ffb`f1fa3b49     : 00000086`a017ece8 000001b1`8f814590 00000000`00000000 00000000`00000001 : coreclr!MethodDescCallSite::CallTargetWorker+0x196 [f:\workspace\_work\1\s\src\vm\callhelpers.cpp @ 612] 
+0d (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : coreclr!MethodDescCallSite::Call+0xb [f:\workspace\_work\1\s\src\vm\callhelpers.h @ 468] 
+0e 00007ffb`f1fa3fd7     : 000001b1`91529e00 00000086`00000000 000001b1`91529e00 000001b1`8f814590 : coreclr!RunMain+0x1f5 [f:\workspace\_work\1\s\src\vm\assembly.cpp @ 1558] 
+0f 00007ffb`f1fa4781     : 00000000`00000000 000001b1`8f814590 000001b1`8f814590 00007ffb`9255ecea : coreclr!Assembly::ExecuteMainMethod+0x1cb [f:\workspace\_work\1\s\src\vm\assembly.cpp @ 1681] 
+10 00007ffb`f1ec21c1     : 00000000`00000001 00000086`a017ee00 00000000`00000001 000001b1`8f8d9460 : coreclr!CorHost2::ExecuteAssembly+0x221 [f:\workspace\_work\1\s\src\vm\corhost.cpp @ 460] 
+11 00007ffc`25674e2d     : 00000000`00000000 00000000`00000000 000001b1`8f87e170 00000000`00000000 : coreclr!coreclr_execute_assembly+0x101 [f:\workspace\_work\1\s\src\dlls\mscoree\unixinterface.cpp @ 412] 
+12 00007ffc`25682e27     : 000001b1`8f7eec98 00000086`a017f040 000001b1`8f87e170 00000000`00000000 : hostpolicy!coreclr_t::execute_assembly+0x2d [f:\workspace\_work\1\s\src\corehost\cli\hostpolicy\coreclr.cpp @ 152] 
+13 00007ffc`25682a36     : 000001b1`8f7eec98 00000086`a017f329 00007ffc`256f82d0 000001b1`8f7eec98 : hostpolicy!run_app_for_context+0x387 [f:\workspace\_work\1\s\src\corehost\cli\hostpolicy\hostpolicy.cpp @ 247] 
+14 00007ffc`25684262     : 00000000`00000000 000001b1`8f7eec90 000001b1`8f7eec90 00000000`00000000 : hostpolicy!run_app+0x46 [f:\workspace\_work\1\s\src\corehost\cli\hostpolicy\hostpolicy.cpp @ 276] 
+15 00007ffc`26693a7e     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000158 : hostpolicy!corehost_main+0x132 [f:\workspace\_work\1\s\src\corehost\cli\hostpolicy\hostpolicy.cpp @ 390] 
+16 00007ffc`266972d8     : 000001b1`8f807510 00000000`00000000 00000000`00000000 00000000`00000000 : hostfxr!execute_app+0x1de [F:\workspace\_work\1\s\src\installer\corehost\cli\fxr\fx_muxer.cpp @ 146] 
+17 (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : hostfxr!?A0xe6dcca98::read_config_and_execute+0x10a [F:\workspace\_work\1\s\src\installer\corehost\cli\fxr\fx_muxer.cpp @ 520] 
+18 00007ffc`26695b5b     : 00000086`a017f600 00000086`a017f571 00000000`00000001 00000086`a017f620 : hostfxr!fx_muxer_t::handle_exec_host_command+0x214 [F:\workspace\_work\1\s\src\installer\corehost\cli\fxr\fx_muxer.cpp @ 1001] 
+19 00007ffc`26692109     : 00000086`a017f620 000001b1`8f7fd8e0 00000000`00000001 00007ffc`7e0c04fd : hostfxr!fx_muxer_t::execute+0x39b [F:\workspace\_work\1\s\src\installer\corehost\cli\fxr\fx_muxer.cpp @ 566] 
+1a 00007ff7`028f2361     : 000001b1`8f7fc020 000001b1`8f7fd8e0 00007ffc`26680000 00000000`00000001 : hostfxr!hostfxr_main_startupinfo+0x89 [F:\workspace\_work\1\s\src\installer\corehost\cli\fxr\hostfxr.cpp @ 50] 
+1b 00007ff7`028f2758     : 00000000`0000001f 00000000`00000001 00007ffc`7dce07a8 00000000`00000000 : EulerConsole_exe!exe_start+0x651 [f:\workspace\_work\1\s\src\corehost\corehost.cpp @ 220] 
+1c 00007ff7`028f4608     : 00000000`00000000 00007ffc`7dce07a8 00000000`00000000 00000000`00000000 : EulerConsole_exe!wmain+0x88 [f:\workspace\_work\1\s\src\corehost\corehost.cpp @ 287] 
+1d (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : EulerConsole_exe!invoke_main+0x22 [d:\agent\_work\2\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl @ 90] 
+1e 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : EulerConsole_exe!__scrt_common_main_seh+0x10c [d:\agent\_work\2\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl @ 288] 
+1f 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+20 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   1  Id: 1f04.84e0 Suspend: 0 Teb: 00000086`9ff0c000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`802e23d7     : 00000000`00000000 00000000`00000000 000001b1`8f7e8c40 000001b1`8f7ee460 : ntdll!NtWaitForWorkViaWorkerFactory+0x14
+01 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!TppWorkerThread+0x2f7
+02 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+03 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   2  Id: 1f04.3eb4 Suspend: 0 Teb: 00000086`9ff0e000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`802e23d7     : 00000000`00000000 00000000`00000000 000001b1`8f7e8c40 000001b1`8f7f0460 : ntdll!NtWaitForWorkViaWorkerFactory+0x14
+01 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!TppWorkerThread+0x2f7
+02 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+03 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   3  Id: 1f04.9670 Suspend: 0 Teb: 00000086`9ff12000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`7e0b0d40     : 00000216`00f102e0 00000216`00f10000 00000216`00f11b00 00007ffc`802e786b : ntdll!NtWaitForMultipleObjects+0x14
+01 00007ffb`f1f62f5b     : 000001b1`8f834878 000001b1`00000000 000001b1`8f834878 000001b1`8f82f040 : KERNELBASE!WaitForMultipleObjectsEx+0xf0
+02 00007ffb`f1f62e6f     : 000001b1`8f834840 000001b1`8f834840 000001b1`8f82f040 00000000`00000000 : coreclr!DebuggerRCThread::MainLoop+0xd3 [f:\workspace\_work\1\s\src\debug\ee\rcthread.cpp @ 1139] 
+03 00007ffb`f1f62d7a     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!DebuggerRCThread::ThreadProc+0xeb [f:\workspace\_work\1\s\src\debug\ee\rcthread.cpp @ 942] 
+04 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!DebuggerRCThread::ThreadProcStatic+0x1a [f:\workspace\_work\1\s\src\debug\ee\rcthread.cpp @ 1528] 
+05 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+06 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   4  Id: 1f04.9a34 Suspend: 0 Teb: 00000086`9ff14000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`7e07a34e     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!NtWaitForSingleObject+0x14
+01 00007ffb`f22a0335     : 000001b1`915108e0 00000000`00000000 00000000`00000000 00000000`00000218 : KERNELBASE!WaitForSingleObjectEx+0x8e
+02 00007ffb`f22a0394     : 000001b1`915108e0 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!HelperCanary::ThreadProc+0xad [f:\workspace\_work\1\s\src\debug\ee\canary.cpp @ 290] 
+03 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!HelperCanary::ThreadProc+0x34 [f:\workspace\_work\1\s\src\debug\ee\canary.cpp @ 270] 
+04 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+05 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   5  Id: 1f04.5b08 Suspend: 0 Teb: 00000086`9ff16000 Unfrozen ""
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`7e0b0d40     : 00000000`00000000 00000002`00000000 00000086`a08ff8a0 00000001`00000200 : ntdll!NtWaitForMultipleObjects+0x14
+01 00007ffb`f1f65500     : 00000000`00000040 00007ffc`7e0c065d 00000000`00000000 00000000`00000008 : KERNELBASE!WaitForMultipleObjectsEx+0xf0
+02 00007ffb`f1fa83be     : 000001b1`a98c57d0 00000000`00000008 00000000`00000001 00007ffb`f1f27fd9 : coreclr!FinalizerThread::WaitForFinalizerEvent+0x78 [f:\workspace\_work\1\s\src\vm\finalizerthread.cpp @ 200] 
+03 00007ffb`f1fa92e2     : 000001b1`a98c5e10 00000086`a08ffda0 000001b1`91511600 00007ffb`f1f15134 : coreclr!FinalizerThread::FinalizerThreadWorker+0x3e [f:\workspace\_work\1\s\src\vm\finalizerthread.cpp @ 305] 
+04 (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : coreclr!ManagedThreadBase_DispatchInner+0xd [f:\workspace\_work\1\s\src\vm\threads.cpp @ 7454] 
+05 00007ffb`f1fa91cf     : 00007ffb`f23ee490 00000242`41819680 00000000`00030188 00007ffb`f1f05edc : coreclr!ManagedThreadBase_DispatchMiddle+0x7e [f:\workspace\_work\1\s\src\vm\threads.cpp @ 7498] 
+06 00007ffb`f1f05f7a     : 00000000`00000001 ffffffff`ffffffff 000001b1`a98c57d0 00000086`a08ffb60 : coreclr!ManagedThreadBase_DispatchOuter+0xaf [f:\workspace\_work\1\s\src\vm\threads.cpp @ 7663] 
+07 (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : coreclr!ManagedThreadBase_NoADTransition+0x28 [f:\workspace\_work\1\s\src\vm\threads.cpp @ 7734] 
+08 (Inline Function)     : --------`-------- --------`-------- --------`-------- --------`-------- : coreclr!ManagedThreadBase::FinalizerBase+0x28 [f:\workspace\_work\1\s\src\vm\threads.cpp @ 7760] 
+09 00007ffb`f1ff335a     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!FinalizerThread::FinalizerThreadStart+0x7a [f:\workspace\_work\1\s\src\vm\finalizerthread.cpp @ 416] 
+0a 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!Thread::intermediateThreadProc+0x8a [f:\workspace\_work\1\s\src\vm\threads.cpp @ 2105] 
+0b 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+0c 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   6  Id: 1f04.90f0 Suspend: 0 Teb: 00000086`9ff18000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`802e23d7     : 000001b1`8f7e0af8 000001b1`8f7e0af8 000001b1`8f7e0b50 00000000`00000000 : ntdll!NtWaitForWorkViaWorkerFactory+0x14
+01 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!TppWorkerThread+0x2f7
+02 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+03 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   7  Id: 1f04.9450 Suspend: 0 Teb: 00000086`9ff1a000 Unfrozen
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`7e0d0b06     : 00000000`0000027c 00007ffc`7f0f0604 00000000`000000ff 00000000`00000003 : ntdll!NtFsControlFile+0x14
+01 00007ffb`f20006bf     : 00000000`00000000 000001b1`8f833850 00000000`00000000 00000000`00000000 : KERNELBASE!ConnectNamedPipe+0x76
+02 00007ffb`f2011b94     : 00000000`00000000 00000000`00000000 000001b1`8f833850 00000000`00000000 : coreclr!IpcStream::DiagnosticsIpc::Accept+0x7b [f:\workspace\_work\1\s\src\debug\debug-pal\win\diagnosticsipc.cpp @ 64] 
+03 00007ffc`7f0a7034     : 00000086`a0bffb10 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!DiagnosticsServerThread+0xa4 [f:\workspace\_work\1\s\src\vm\diagnosticserver.cpp @ 51] 
+04 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+05 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+
+   8  Id: 1f04.69f4 Suspend: 0 Teb: 00000086`9ff1c000 Unfrozen ""
+ # RetAddr               : Args to Child                                                           : Call Site
+00 00007ffc`7e0ad84e     : 00000086`9fdefb58 00007ffb`f23e0cc8 00000000`00000000 00000000`000000c0 : ntdll!NtDelayExecution+0x14
+01 00007ffb`f1f49ded     : 000001b1`00000000 00007ffb`00000001 00000000`c00000bb 00000000`00000000 : KERNELBASE!SleepEx+0x9e
+02 00007ffb`f1f49d8c     : 00000000`ffffffff 00000086`9fdefba8 00000086`a017e398 000001b1`8f8de130 : coreclr!ThreadpoolMgr::TimerThreadFire+0x5d [f:\workspace\_work\1\s\src\vm\win32threadpool.cpp @ 4601] 
+03 00007ffc`7f0a7034     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : coreclr!ThreadpoolMgr::TimerThreadStart+0x6c [f:\workspace\_work\1\s\src\vm\win32threadpool.cpp @ 4573] 
+04 00007ffc`8031d0d1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+05 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+MANAGED THREADS
+ThreadCount:      3
+UnstartedThread:  0
+BackgroundThread: 2
+PendingThread:    0
+DeadThread:       0
+Hosted Runtime:   no
+                                                                                                        Lock  
+ DBG   ID OSID ThreadOBJ           State GC Mode     GC Alloc Context                  Domain           Count Apt Exception
+   0    1 6e78 000001B18F822B20    2a020 Preemptive  000001B191537258:000001B1915374D0 000001b18f83a810 1     MTA 
+   5    2 5b08 000001B1A98C57D0    2b220 Preemptive  0000000000000000:0000000000000000 000001b18f83a810 0     MTA (Finalizer) 
+   8    3 69f4 000001B18F8D4EF0  102a220 Preemptive  0000000000000000:0000000000000000 000001b18f83a810 0     MTA (Threadpool Worker) 
+MANAGED CALLSTACKS
+OS Thread Id: 0x6e78 (0)
+        Child SP               IP Call Site
+00000086A017E2F8 00007ffc8036c074 [InlinedCallFrame: 00000086a017e2f8] Interop+Kernel32.ReadFile(IntPtr, Byte*, Int32, Int32 ByRef, IntPtr)
+00000086A017E2F8 00007ffb924e29b8 [InlinedCallFrame: 00000086a017e2f8] Interop+Kernel32.ReadFile(IntPtr, Byte*, Int32, Int32 ByRef, IntPtr)
+00000086A017E2C0 00007ffb924e29b8 ILStubClass.IL_STUB_PInvoke(IntPtr, Byte*, Int32, Int32 ByRef, IntPtr)
+00000086A017E390 00007ffc4fc48d46 System.ConsolePal+WindowsConsoleStream.ReadFileNative(IntPtr, Byte[], Int32, Int32, Boolean, Int32 ByRef, Boolean) [/_/src/System.Console/src/System/ConsolePal.Windows.cs @ 1198]
+00000086A017E3F0 00007ffc4fc48c93 System.ConsolePal+WindowsConsoleStream.Read(Byte[], Int32, Int32) [/_/src/System.Console/src/System/ConsolePal.Windows.cs @ 1150]
+00000086A017E460 00007ffbf0c4fc44 System.IO.StreamReader.ReadBuffer() [/_/src/System.Private.CoreLib/shared/System/IO/StreamReader.cs @ 613]
+00000086A017E4B0 00007ffbf0c4fb96 System.IO.StreamReader.ReadLine() [/_/src/System.Private.CoreLib/shared/System/IO/StreamReader.cs @ 784]
+00000086A017E500 00007ffc4fc4d143 System.IO.SyncTextReader.ReadLine() [/_/src/System.Console/src/System/IO/SyncTextReader.cs @ 77]
+00000086A017E550 00007ffc4fc4530d System.Console.ReadLine() [/_/src/System.Console/src/System/Console.cs @ 463]
+00000086A017E580 00007ffb924e0fef EulerConsole.Program.Main(System.String[]) [C:\Users\tferrand\source\repos\ProjectEuler\EulerConsole\Program.cs @ 10]
+00000086A017E7B8 00007ffbf2006ba3 [GCFrame: 00000086a017e7b8] 
+00000086A017ED50 00007ffbf2006ba3 [GCFrame: 00000086a017ed50] 
+OS Thread Id: 0x84e0 (1)
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+Failed to start stack walk: 80070057
+OS Thread Id: 0x3eb4 (2)
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+Failed to start stack walk: 80070057
+OS Thread Id: 0x9670 (3)
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+Failed to start stack walk: 80070057
+OS Thread Id: 0x9a34 (4)
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+Failed to start stack walk: 80070057
+OS Thread Id: 0x5b08 (5)
+        Child SP               IP Call Site
+00000086A08FFB70 00007ffc8036cb04 [DebuggerU2MCatchHandlerFrame: 00000086a08ffb70] 
+OS Thread Id: 0x90f0 (6)
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+Failed to start stack walk: 80070057
+OS Thread Id: 0x9450 (7)
+Unable to walk the managed stack. The current thread is likely not a 
+managed thread. You can run !threads to get a list of managed threads in
+the process
+Failed to start stack walk: 80070057
+OS Thread Id: 0x69f4 (8)
+        Child SP               IP Call Site
